@@ -1,16 +1,16 @@
 #!/bin/bash
-# Telegram Web Service daemon
+# Web Service daemon
 # chkconfig: 345 20 80
-# description: Cloud-cb-bot daemon for sending notification to Telegram
-# processname: cloud-cb-bot
+# description: scriptname daemon
+# processname: scriptname
 
-DAEMON_PATH="/opt/cloud-cb-bot/"
+DAEMON_PATH="/opt/scriptname/"
 
 DAEMON="/opt/jdk1.8.0_144/bin/java"
-DAEMONOPTS="-jar logpars.jar"
+DAEMONOPTS="-jar scriptname.jar"
 
-NAME=cloud-cb-bot
-DESC="Telegram Web Service daemon for sending notification to Telegram"
+NAME=scriptname
+DESC="scriptDescription"
 PIDFILE=/var/run/$NAME.pid
 LOGFILE=/var/log/$NAME.log
 SCRIPTNAME=/etc/init.d/$NAME
